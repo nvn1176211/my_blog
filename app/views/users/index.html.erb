@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 form-group">
+      <label for="">Welcome</label>
+      <%= link_to current_user.name, user_path(current_user) %>
+    </div>
+    <div class="col-lg-12 form-group">
+      <label>List Users</label>
+      <table class="table">
+        <thead>
+          <th>ID</th>
+          <th>User Name</th>
+        </thead>
+        <tbody>
+          <%= render @users %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

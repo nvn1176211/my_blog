@@ -7,11 +7,11 @@
 
 <div class="row">
 	<% @posts.each do |post| %>
-		<div class="col-lg-4 col-sm-12 col-md-6">
+		<div class="col-lg-4 col-sm-12 col-md-6 mt-3">
 			<h1>
 				<%= post.title %>
 			</h1>
-			<p>
+			<p class="mb-0">
 				<%= truncate(post.content, length: 140) %>
 			</p>
 			<%= link_to 'Read more', post_path(post) %>

@@ -1,8 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12 form-group">
-      <label for="">Welcome</label>
-      <%= link_to current_user.name, user_path(current_user) %>
+      <label for="">Welcome <%= current_user.name %></label>
     </div>
     <div class="col-lg-12 form-group">
       <label>List Users</label>
@@ -16,5 +15,6 @@
         </tbody>
       </table>
     </div>
+    <%= link_to "Return", user_path(current_user) %>
   </div>
 </div>
